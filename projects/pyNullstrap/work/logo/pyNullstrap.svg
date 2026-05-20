@@ -1,0 +1,40 @@
+<svg width="640" height="640" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="hexClipN">
+      <polygon points="256,28 418,122 418,320 256,414 94,320 94,122"/>
+    </clipPath>
+  </defs>
+
+  <!-- outer sticker border -->
+  <polygon points="256,16 430,117 430,325 256,426 82,325 82,117" fill="#ffffff"/>
+
+  <!-- main hex -->
+  <polygon points="256,28 418,122 418,320 256,414 94,320 94,122"
+           fill="#f8fafc" stroke="#0f172a" stroke-width="10"/>
+
+  <g clip-path="url(#hexClipN)">
+    <!-- shadow N -->
+    <g fill="#94a3b8" opacity="0.38" transform="translate(-10,10)">
+      <rect x="156" y="138" width="34" height="168" rx="12"/>
+      <rect x="198" y="194" width="34" height="112" rx="12"/>
+      <rect x="240" y="250" width="34" height="56" rx="12"/>
+      <rect x="282" y="138" width="34" height="168" rx="12"/>
+    </g>
+
+    <!-- front N -->
+    <g>
+      <rect x="166" y="128" width="34" height="168" rx="12" fill="#2563eb"/>
+      <rect x="208" y="184" width="34" height="112" rx="12" fill="#2563eb"/>
+      <rect x="250" y="240" width="34" height="56" rx="12" fill="#2563eb"/>
+      <rect x="292" y="128" width="34" height="168" rx="12" fill="#f59e0b"/>
+    </g>
+
+    <!-- wordmark -->
+    <text x="256" y="360" text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="30" font-weight="700" fill="#0f172a">Nullstrap</text>
+    <text x="256" y="386" text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="14" fill="#475569">null as shadow, signal selected</text>
+  </g>
+</svg>
